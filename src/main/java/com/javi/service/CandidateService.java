@@ -1,6 +1,6 @@
 package com.javi.service;
 
-import com.javi.domain.Candidate;
+import com.javi.entity.Candidate;
 import com.javi.repository.CandidateRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

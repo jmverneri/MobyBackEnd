@@ -1,4 +1,4 @@
-package com.javi.domain;
+package com.javi.entity;
 
 
 import jakarta.persistence.*;
@@ -11,13 +11,18 @@ public class Candidate {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_candidate")
     private Long candidateId;
+    @Column(name = "cname")
     private String name;
     private String surname;
+    @Column(name = "identity_type")
     private String identityType;
+    @Column(name = "id_number")
     private String idNumber;
+    @Column(name = "birth_date")
     private Date birthDate;
-    private Technology technology;
+    //private Technology technology;
 
     public Candidate() {
     }
@@ -62,13 +67,13 @@ public class Candidate {
         this.birthDate = birthDate;
     }
 
-    public Technology getTechnology() {
+    /*public Technology getTechnology() {
         return technology;
     }
 
     public void setTechnology(Technology technology) {
         this.technology = technology;
-    }
+    }*/
 
     public void setCandidateId(Long candidateId) {
         this.candidateId = candidateId;
@@ -87,7 +92,7 @@ public class Candidate {
                 ", identityType='" + identityType + '\'' +
                 ", idNumber='" + idNumber + '\'' +
                 ", birthDate=" + birthDate +
-                ", technology=" + technology +
+
                 '}';
     }
 }

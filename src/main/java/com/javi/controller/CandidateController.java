@@ -1,6 +1,6 @@
 package com.javi.controller;
 
-import com.javi.domain.Candidate;
+import com.javi.entity.Candidate;
 import com.javi.service.CandidateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
